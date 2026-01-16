@@ -1,1 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../../Images/Logo.png">
+    <title>Lesson 5</title>
 
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+    <header>
+        <h1>DIGITAL LOGIC SYSTEM</h1>
+        <nav>
+            <a href="#operations">Operations</a>
+            <a href="#expressions">Expressions</a>
+            <a href="#laws">Laws</a>
+            <a href="#logic">Logic</a>
+            <a href="../Projects.html">Back</a>
+            <button id="themeToggle" aria-label="Toggle dark mode" style="margin-left: 10px;">🌙</button>
+        </nav>
+    </header>
+
+    <section id="operations" data-type="operations" class="textdesign">
+        <p>Operations</p>
+
+            <p><b>Boolean Operations</b></p>
+                <p><b>Key Points to Include:</b></p>
+
+                <ul>
+                    <li><b>AND (⋅ / ∧):</b> Output 1 only if all inputs are 1.</li>
+                    <li><b>OR (+ / ∨):</b> Output 1 if any input is 1.</li>
+                    <li><b>NOT (¬ / '):</b> Output is opposite of input.</li>
+                </ul>
+
+                <br>
+                
+                
+                <p><b>Input A</b> &emsp; &emsp; &emsp; <b>Input B</b> &emsp; &emsp; <b>AND (A⋅B)</b> &emsp; &emsp; <b>OR (A+B)</b> &emsp; &emsp; <b>NOT A (¬A)</b></p>
+                <p>0 &emsp; &emsp; &emsp; &ensp; &ensp; &emsp; 1 &emsp; &emsp; &emsp; &ensp; &ensp; 0 &emsp; &emsp; &emsp; &ensp; &ensp; &ensp; &ensp; 0 &emsp; &emsp; &emsp; &emsp; &ensp; &ensp; 1</p>
+                <p>0 &emsp; &emsp; &emsp; &ensp; &ensp; &emsp; 0 &emsp; &emsp; &emsp; &ensp; &ensp; 0 &emsp; &emsp; &emsp; &ensp; &ensp; &ensp; &ensp; 1 &emsp; &emsp; &emsp; &emsp; &ensp; &ensp; 1</p>
+                <p>1 &emsp; &emsp; &emsp; &ensp; &ensp; &emsp; 1 &emsp; &emsp; &emsp; &ensp; &ensp; 0 &emsp; &emsp; &emsp; &ensp; &ensp; &ensp; &ensp; 1 &emsp; &emsp; &emsp; &emsp; &ensp; &ensp; 0</p>
+                <p>1 &emsp; &emsp; &emsp; &ensp; &ensp; &emsp; 1 &emsp; &emsp; &emsp; &ensp; &ensp; 1 &emsp; &emsp; &emsp; &ensp; &ensp; &ensp; &ensp; 1 &emsp; &emsp; &emsp; &emsp; &ensp; &ensp; 0</p>
+    </section>
+
+
+    <section id="expressions" data-type="expressions" class="textdesign">
+        <p>Expressions</p>
+
+        <p><b>Boolean Expressions & Truth Tables</b></p>
+                <p><b>Key Points:</b></p>
+
+                <ul>
+                    <li><b>Boolean Expression:</b> A statement that results in True (1) or False (0).</li>
+                    <li><b>Truth Table:</b> Shows all possible input combinations and their outputs.</li>
+                </ul>
+
+                <br>
+
+                <p>
+                    <b>Example:</b> 
+                    Boolean Expression: <b style="color: green;">F = x AND y OR NOT z</b>
+                </p>
+
+                <p><b>X</b> &emsp; &emsp; <b>Y</b> &emsp; &emsp; <b>Z</b> &emsp; &emsp; <b>x∧y</b> &emsp; &emsp; <b>¬z</b> &emsp; &emsp; <b>F = x∧y + ¬z</b></p>
+                <p>0 &emsp; &emsp; 0 &emsp; &emsp; 0 &ensp; &ensp; &ensp; &ensp; 0 &emsp; &ensp; &ensp; &ensp; 1 &emsp; &emsp; &emsp; &emsp; 1</p>
+                <p>0 &emsp; &emsp; 1 &emsp; &emsp; 0 &ensp; &ensp; &ensp; &ensp; 0 &emsp; &ensp; &ensp; &ensp; 1 &emsp; &emsp; &emsp; &emsp; 1</p>
+                <p>1 &emsp; &emsp; 0 &emsp; &emsp; 1 &ensp; &ensp; &ensp; &ensp; 0 &emsp; &ensp; &ensp; &ensp; 0 &emsp; &emsp; &emsp; &emsp; 0</p>
+                <p>1 &emsp; &emsp; 1 &emsp; &emsp; 0 &ensp; &ensp; &ensp; &ensp; 1 &emsp; &ensp; &ensp; &ensp; 1 &emsp; &emsp; &emsp; &emsp; 1</p>
+    </section>
+
+
+    <section id="laws" data-type="laws" class="textdesign">
+        <p>Laws</p>
+
+        <p><b>Boolean Laws & Simplification</b></p>
+                <p><b>Key Points</b></p>
+
+                <ul>
+                    <li>Laws make expressions <b>shorter and easier</b> to implement in circuits</li>
+                    <li><b>Important Laws to Include:</b>
+                        <ul>
+                            <li>Identity: <b style="color: green;">A+0=A, A⋅1=A</b></li>
+                            <li>Null: <b style="color: green;">A+1=1, A⋅0=0</b></li>
+                            <li>Idempotent: <b style="color: green;">A+A=A, A⋅A=A</b></li>
+                            <li>Inverse: <b style="color: green;">A + ¬A = 1, A⋅¬A = 0</b></li>
+                            <li>De Morgan's: <b style="color: green;">(A⋅B)' = A'+B', (A+B)' = A'⋅B'</b></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <br>
+
+                <p><b>Example:</b></p>
+                <ul>
+                    
+                    <li>Simplify <b style="color: green;">A + B + A⋅C</b> → <b style="color: green;">A + B</b></li>
+                    <li>Simplify <b style="color: green;">(A+B)(A+C)</b> → <b style="color: green;">A + BC</b></li>
+                </ul>
+
+                <br>
+
+                <p><b>Visuals:</b></p>
+                <ul>
+                    <li>Step-by-step color-coded simplification</li>
+                    <li>Use small icons for AND (⋅), OR (+), NOT (¬) in each step</li>
+                </ul>
+    </section>
+
+
+    <section id="logic" data-type="logic" class="textdesign">
+        <p>Logic</p>
+
+        <p><b>Logic Gates & Circuits</b></p>
+                <p><b>Key Points</b></p>
+
+                <ul>
+                    <li><b>AND, OR, NOT, NAND, NOR, XOR</b></li>
+                    <li>Each gate has <b>symbol + function table</b></li>
+                    <li><b>Circuit Implementation:</b> Boolean expression → logic gate diagram</li>
+                </ul>
+                <br>
+                <p>Examples:</p>
+                <ol>
+                    <li>Boolean Expression: <b style="color: green;">AB + C</b> → Logic Circuit (AND + OR gates)</li>
+                    <li>Boolean Expression: <b style="color: green;">(A+B)⊕(C+D)</b> → XOR + OR + AND gates</li>
+                </ol>   
+    </section>
+
+
+
+    <!-- BACK TO TOP -->
+    <button id="backToTop" aria-label="Back to top">↑</button>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+
+        <section class="footer-container">
+
+            <section class="footer-brand">
+                <h3>Girlie Grace</h3>
+                <p>
+                    Aspiring Frontend Developer passionate about creating
+                    clean, responsive, and modern websites.
+                </p>
+            </section>
+
+
+            <section class="footer-connect">
+                <h4>Connect</h4>
+                <section class="social-icons">
+                    <a href="https://www.facebook.com/grace.gerlay" target="_blank">Facebook</a>
+                </section>
+            </section>
+
+        </section>
+
+        <section class="footer-bottom">
+            © 2026 GIRLIE GRACE L. ONTOLAN Portfolio
+        </section>
+    </footer>
+</body>
+
+
+<!--Black and white theme-->
+    <script>
+        const toggle = document.getElementById("themeToggle");
+
+        // Load saved theme
+        if (localStorage.getItem("theme") === "dark") {
+            document.body.classList.add("dark");
+            toggle.textContent = "☀️";
+        }
+
+        toggle.addEventListener("click", () => {
+            document.body.classList.toggle("dark");
+
+            const isDark = document.body.classList.contains("dark");
+            toggle.textContent = isDark ? "☀️" : "🌙";
+            localStorage.setItem("theme", isDark ? "dark" : "light");
+        });
+    </script>
+
+    <!--Back to top-->
+    <script>
+        const backToTop = document.getElementById("backToTop");
+
+        window.addEventListener("scroll", () => {
+            const scrolledToBottom =
+                window.innerHeight + window.scrollY >= document.body.offsetHeight - 10;
+
+            backToTop.classList.toggle("show", scrolledToBottom);
+        });
+
+        backToTop.addEventListener("click", () => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    </script>
+</html>
