@@ -1,1 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../../Images/Logo.png">
+    <title>Lesson 4</title>
 
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+    <header>
+        <h1>Data Representation</h1>
+        <nav>
+            <a href="#introduction">Introduction</a>
+            <a href="#number">Number</a>
+            <a href="#conversion">Conversion</a>
+            <a href="#base">Base</a>
+            <a href="#arithmetic">Arithmetic</a>
+            <a href="../Projects.html">Back</a>
+            <button id="themeToggle" aria-label="Toggle dark mode" style="margin-left: 10px;">🌙</button>
+        </nav>
+    </header>
+
+    <section id="introduction" data-type="introduction" class="textdesign">
+        <p>Introduction: Introduction & Learning Goals</p>
+        
+                <p>
+                    This lesson explains how computers use different number systems such as decimal, binary, octal, and hexadecimal. 
+                    It also teaches how to convert numbers between systems and how to perform binary arithmetic operations.</p>
+                <br>
+                
+                <p><b>Learning Outcomes</b></p>
+                <ul>
+                    <li>Distinguish number systems and data representation</li>
+                    <li>Perform number conversions</li>
+                    <li>Solve binary addition and subtraction</li>
+                    <li>Understand complements and signed numbers</li>
+                </ul>
+    </section>
+
+
+    <section id="number" data-type="number" class="textdesign">
+        <p>Number: Number Systems </p>
+        
+            <p><b>Decimal Number System Base 10</b></p>
+
+                <ul>
+                    <li>Uses digits 0-9</li>
+                    <li>Place values: ones, tens, hundreds…</li>
+                    <li>Example: <br><br>
+                        (1*1000) + (2*100) + (3*10) + (4*1) <br><br>
+                        (1*10^3) + (2*10^2) + (3*10^1) + (4*10^0) <br><br>
+                        1000 + 200 + 30 + 1 <br><br>
+                        1234⌄10</li>
+                </ul>
+                
+
+
+                <br>
+                <p><b>Binary Number System Base 2</b></p>
+                <ul>
+                    <li>Uses only <b>0 and 1</b></li>
+                    <li>Used by computers</li>
+                    <li>ON = 1, OFF = 0</li>
+                    <li>Place values are powers of 2</li>
+                </ul>
+
+
+                
+                <br>
+                <p><b>Octal Number System Base 8</b></p>
+
+                <ul>
+                    <li>Uses digits 0-7</li>
+                    <li>Place values are powers of 8</li>
+                </ul>
+
+
+
+                <br>
+                <p><b>Hexadeciman Number System Base 16</b></p>
+                <ul>
+                    <li>Digits: 0-9 and A-F</li>
+                    <li>A=10, B=11, C=12, D=13, E=14, F=15</li>
+                    <li>Used in memory addresses and programming</li>
+                </ul>
+    </section>
+
+
+    <section id="conversion" data-type="conversion" class="textdesign">
+        <p>Conversion: Converting Between Number Systems</p>
+        
+        <p><b>Number Conversion</b></p>
+                <ul>
+                    <li><b>A. Binary → Decimal</b></li>
+                    <p>
+                        Example: <br><br>
+                        101012 = (1 *24) + (0 * 23) + (1 * 22) + (0 * 21) + (1 * 20) <br><br>
+                        = (1x16) + (1* 8) + (1*4) + (0*2) + (1*1) <br><br>
+                        = 16 + 0 + 4 + 0 + 1 <br><br>
+                        = 21⌄10</p>
+                        <br>
+
+                    <li><b>B. Octal → Decimal</b></li>
+                    <p>
+                        Example: <br><br>
+                        1258 = (1* 82) + (2 * 81) + (5 * 80) <br><br>
+                        = (1 * 64) + (2 * 8) + (5 * 1) <br><br>
+                        = 64 + 16 + 5 <br><br>
+                        = 85⌄10
+                        </p>
+                        <br>
+
+                    <li><b>C. Hexadecimal → Decimal</b></li>
+                    <p><b>Hex</b> &emsp; &emsp; &emsp; &emsp;<b>Decimal</b></p>
+                    <p><b>0-9</b> &emsp; &emsp; &emsp; &emsp; <b>0-9</b></p>
+                    <p><b>A</b> &emsp; &emsp; &emsp; &emsp; &ensp; <b>10</b></p>
+                    <p><b>B</b> &emsp; &emsp; &emsp; &emsp; &ensp; <b>11</b></p>
+                    <p><b>C</b> &emsp; &emsp; &emsp; &emsp; &ensp; <b>12</b></p>
+                    <p><b>D</b> &emsp; &emsp; &emsp; &emsp; &ensp; <b>13</b></p>
+                    <p><b>E</b> &emsp; &emsp; &emsp; &emsp; &ensp; <b>14</b></p>
+                    <p><b>F</b> &emsp; &emsp; &emsp; &emsp; &ensp; <b>15</b></p>
+                    
+                    <br>
+                    
+                    <p>
+                        Example: <br><br>
+                        E = 14 ; 8 = 8 ;B = 11 <br><br>
+                        E8B⌄16 = (14 * 16^2) + (8 * 16^1) + (1 * 16^0) <br><br>
+                        = (14 * 256) + (8 * 16) + (11 * 1) <br><br>
+                        = 3,584 + 128 + 11 <br><br>
+                        =3723⌄10
+                    </p>
+                    
+                    <br>
+
+                    <li><b>D. Decimal → Binary</b></li>
+                    <li>Divide by 2</li>
+                    <li>Write remainders</li>
+                    <li>Read bottom to top</li>
+                </ul>
+
+                <p>
+                    Example: <br><br>
+                    17⌄10 = 10001⌄2
+                </p>
+
+                <br>
+
+                <li><b>E. Decimal → Octal</b></li>
+                <li>Divide by 8</li>
+                <li>Write remainders upward</li>
+
+                <p>
+                    Example: <br><br>
+                    127⌄10 = 177⌄8
+                </p>
+
+                <br>
+
+                <li><b>F. Decimal → Hexadecimal</b></li>
+                <li>Divide by 16</li>
+                <li>Remainders 10-15 become A-F</li>
+
+                <p>
+                    Example: <br><br>
+                    960⌄10 = 3C0⌄16
+                </p>
+    </section>
+
+
+    <section id="base" data-type="base" class="textdesign">
+        <p>Base-to-Base Conversions:</p>
+        
+        <p>Base</p>
+
+                    <ul>
+                        <li><b>Conversion</b> &emsp; &emsp; &emsp; &emsp; <b>Method</b></li>
+                        <p>Binary → Octal &emsp; &emsp; &emsp; Binary → Decimal → Octal</p>
+                        <p>Octal → Binary &emsp; &emsp; &emsp; Octal → Decimal → Binary</p>
+                        <p>Hex → Binary &emsp; &emsp; &emsp; Hex → Decimal → Binary</p>
+                        <p>Hex → Octal &emsp; &emsp; &emsp; Hex → Binary → Octal</p>
+                    </ul>
+                    
+                    <br>
+                    
+                    <p>
+                        Example: <br><br>
+                        1010101⌄2 = 125⌄8 <br><br>
+                        A2B⌄16 = 101000101011⌄2
+                    </p>
+    </section>
+
+
+    <section id="arithmetic" data-type="arithmetic" class="textdesign">
+        <p>Arithmetic</p>
+
+        <p><b>Binary Addition Rules</b></p>
+                    <p>Rules:</p>
+
+                    <ul>
+                        <li>0 + 0 = 0</li>
+                        <li>0 + 1 = 1</li>
+                        <li>1 + 0 = 1</li>
+                        <li>1 + 1 = 10 (carry 1)</li>
+                    </ul>
+
+                    <br>
+                    
+                    <p>
+                        Example: <br><br>
+                        101 + 101 = 1010
+                    </p>
+
+                    <br>
+
+                    <p>
+                       <b>1's Complement</b>  <br>
+                        To get 1's complement, change all 0s to 1s and all 1s to 0s.
+
+                        <br><br>
+                        <p>
+                            Example: <br>
+                            10101110 → 01010001
+
+                        </p>
+                    </p>
+                    <p>Purpose:</p>
+                    <ul><li>Used to represent <b>negative numbers</b></li></ul>
+                    
+                    <br>
+                    <p><b>Adding Signed Numbers</b><br>
+                    Include three cases:
+                    </p>
+
+                    <ol>
+                        <li>Positive + Negative (positive bigger)</li>
+                        <li>Positive + Negative (negative bigger)</li>
+                        <li>Negative + Negative</li>
+                    </ol>
+
+                    <br>
+
+                    <p>
+                        Example: <br>
+                        1101 + (-1001) = 0101
+                    </p>
+
+                    <br>
+                    <br>
+                    <br>
+
+                    <p><b>Binary Subtraction</b></p>
+                    <p>Rules:</p>
+
+                    <ul>
+                        <li>0 - 1 = 1 (borrow)</li>
+                        <li>1 - 1 = 0</li>
+                    </ul>
+
+                    <p>
+                        Example: <br>
+                        1010 - 101 = 0101
+                    </p>
+    </section>
+
+
+
+    <!-- BACK TO TOP -->
+    <button id="backToTop" aria-label="Back to top">↑</button>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+
+        <section class="footer-container">
+
+            <section class="footer-brand">
+                <h3>Girlie Grace</h3>
+                <p>
+                    Aspiring Frontend Developer passionate about creating
+                    clean, responsive, and modern websites.
+                </p>
+            </section>
+
+
+            <section class="footer-connect">
+                <h4>Connect</h4>
+                <section class="social-icons">
+                    <a href="https://www.facebook.com/grace.gerlay" target="_blank">Facebook</a>
+                </section>
+            </section>
+
+        </section>
+
+        <section class="footer-bottom">
+            © 2026 GIRLIE GRACE L. ONTOLAN Portfolio
+        </section>
+    </footer>
+</body>
+
+<!--Black and white theme-->
+    <script>
+        const toggle = document.getElementById("themeToggle");
+
+        // Load saved theme
+        if (localStorage.getItem("theme") === "dark") {
+            document.body.classList.add("dark");
+            toggle.textContent = "☀️";
+        }
+
+        toggle.addEventListener("click", () => {
+            document.body.classList.toggle("dark");
+
+            const isDark = document.body.classList.contains("dark");
+            toggle.textContent = isDark ? "☀️" : "🌙";
+            localStorage.setItem("theme", isDark ? "dark" : "light");
+        });
+    </script>
+
+    <!--Back to top-->
+    <script>
+        const backToTop = document.getElementById("backToTop");
+
+        window.addEventListener("scroll", () => {
+            const scrolledToBottom =
+                window.innerHeight + window.scrollY >= document.body.offsetHeight - 10;
+
+            backToTop.classList.toggle("show", scrolledToBottom);
+        });
+
+        backToTop.addEventListener("click", () => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    </script>
+</html>
