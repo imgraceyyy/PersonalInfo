@@ -1,1 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../../Images/Logo.png">
+    <title>Lesson 7</title>
 
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+    <header>
+        <h1>THE INTERNET</h1>
+        <nav>
+            <a href="#introduction">Introduction</a>
+            <a href="#history">History</a>
+            <a href="#internet">Internet</a>
+            <a href="#protocols">Protocols</a>
+            <a href="../Projects.html">Back</a>
+            <button id="themeToggle" aria-label="Toggle dark mode" style="margin-left: 10px;">🌙</button>
+        </nav>
+    </header>
+
+    <section id="introduction" data-type="introduction" class="textdesign">
+        <p>Introduction</p>
+
+        <p><b>Introduction to the Internet</b></p>
+                <p>
+                    <b>The Internet</b> is a global network of computers that allows people to communicate, share information, and access digital services. 
+                    It has changed how people live, work, study, and socialize. 
+                    People can now send messages, watch videos, listen to music, attend online classes, and shop without leaving their homes.
+                </p>
+
+                <p>
+                    <b>The Internet</b> is considered the most important technology of the Information Age. 
+                    Just like electricity transformed the Industrial Age, the Internet transformed how people connect and access information. Today, billions of devices such as computers, smartphones, and servers are connected worldwide.
+                </p>
+    </section>
+
+    <section id="history" data-type="history" class="textdesign">
+        <p>History</p>
+
+        <p><b>History and Development of the Internet</b></p>
+                <p>
+                    The idea of the Internet began in 1962 with the concept of the “Galactic Network,” which imagined computers communicating with each other. 
+                    In 1957, the launch of Sputnik 1 encouraged the United States to invest in advanced research, leading to the creation of DARPA.
+                </p>
+                <p>In 1969, the first computer network called ARPANET connected four universities:</p>
+                <ul>
+                    <li>Stanford University</li>
+                    <li>University of Utah</li>
+                    <li>University of California (Santa Barbara)</li>
+                    <li>University of California (Los Angeles)</li>
+                </ul>
+                <p>This system used packet switching, which allows data to be sent in small parts. This became the foundation of today's Internet.</p>
+                
+                <br>
+
+                <p><b>Uses and Importance of the Internet</b></p>
+                <p>
+                    The Internet is used in many ways in daily life: <br><br>
+                    People use it to search for information, read news, communicate through emails and video calls, send and receive files, and connect through social media. It helps people work faster, learn better, and stay connected even when far away.
+                    During times like lockdowns, the Internet became very important because people used it for online classes, work-from-home, and staying in touch with family and friends.
+                </p>
+    </section>
+
+    <section id="internet" data-type="internet" class="textdesign">
+        <p>Internet</p>
+
+        <p><b>Internet Technologies: IoT and Cloud Computing</b></p>
+                <p>
+                    <b>The Internet of Things (IoT) </b>refers to devices connected to the Internet that can collect and share data. 
+                    Examples include smart lights, air-conditioners, and security cameras. These devices can work automatically based on information they receive.
+                </p>
+                
+                <br>
+
+                <p><b>Advantages of IoT</b></p>
+                <ul>
+                    <li>Saves time and money</li>
+                    <li>Allows devices to communicate</li>
+                    <li>Provides automation</li>
+                    <li>Makes life more convenient</li>
+                </ul>
+
+                <br>
+
+                <p><b>Disadvantages of IoT</b></p>
+                <ul>
+                    <li>Higher risk of hacking</li>
+                    <li>Data can be difficult to manage</li>
+                    <li>Bugs can affect many devices</li>
+                    <li>Compatibility problems</li>
+                </ul>
+
+                <br>
+                
+                <p>
+                    <b>Cloud Computing</b> allows people to store data and use applications through the Internet instead of on their own computers. 
+                    Examples include Google Drive, Gmail, Microsoft 365, Dropbox, and Zoom. 
+                    Cloud computing helps save money, allows easy access to files anywhere, supports teamwork, and provides better data security and backups.
+                </p>
+    </section>
+
+    <section id="protocols" data-type="protocols" class="textdesign">
+        <p>Protocols</p>
+
+        <p><b>Internet Security and Protocols</b></p>
+                <p>
+                    Internet security protects data and systems from online threats. 
+                    It uses tools like encryption, firewalls, antivirus software, and secure websites. 
+                    A safe website usually starts with HTTPS and shows a lock symbol.
+                </p>
+
+                <p>To stay safe online:</p>
+                <ul>
+                    <li>Use strong passwords</li>
+                    <li>Use two-factor authentication</li>
+                    <li>Avoid clicking suspicious links</li>
+                    <li>Use different email accounts for different purposes</li>
+                </ul>
+                <p>Internet communication works because of Internet Protocols (IP). These are rules that control how data is sent.</p>
+                
+                <br>
+
+                <p>Important protocols include:</p>
+                <ul>
+                    <li>TCP/IP - ensures data arrives correctly</li>
+                    <li>HTTP - used for websites</li>
+                    <li>FTP - used for file transfers</li>
+                </ul>
+                <p>There are two versions of IP: IPv4 and IPv6, which help devices identify and connect with each other.</p>
+    </section>
+
+
+
+    <!-- BACK TO TOP -->
+    <button id="backToTop" aria-label="Back to top">↑</button>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+
+        <section class="footer-container">
+
+            <section class="footer-brand">
+                <h3>Girlie Grace</h3>
+                <p>
+                    Aspiring Frontend Developer passionate about creating
+                    clean, responsive, and modern websites.
+                </p>
+            </section>
+
+
+            <section class="footer-connect">
+                <h4>Connect</h4>
+                <section class="social-icons">
+                    <a href="https://www.facebook.com/grace.gerlay" target="_blank">Facebook</a>
+                </section>
+            </section>
+
+        </section>
+
+        <section class="footer-bottom">
+            © 2026 GIRLIE GRACE L. ONTOLAN Portfolio
+        </section>
+    </footer>
+</body>
+
+<!--Black and white theme-->
+    <script>
+        const toggle = document.getElementById("themeToggle");
+
+        // Load saved theme
+        if (localStorage.getItem("theme") === "dark") {
+            document.body.classList.add("dark");
+            toggle.textContent = "☀️";
+        }
+
+        toggle.addEventListener("click", () => {
+            document.body.classList.toggle("dark");
+
+            const isDark = document.body.classList.contains("dark");
+            toggle.textContent = isDark ? "☀️" : "🌙";
+            localStorage.setItem("theme", isDark ? "dark" : "light");
+        });
+    </script>
+
+    <!--Back to top-->
+    <script>
+        const backToTop = document.getElementById("backToTop");
+
+        window.addEventListener("scroll", () => {
+            const scrolledToBottom =
+                window.innerHeight + window.scrollY >= document.body.offsetHeight - 10;
+
+            backToTop.classList.toggle("show", scrolledToBottom);
+        });
+
+        backToTop.addEventListener("click", () => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    </script>
+</html>
