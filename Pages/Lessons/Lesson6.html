@@ -1,1 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../../Images/Logo.png">
+    <title>Lesson 6</title>
 
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+    <header>
+        <h1>ELECTRONIC MEDIA</h1>
+        <nav>
+            <a href="#media">Media</a>
+            <a href="#benefits">Benefits</a>
+            <a href="#legal">Legal</a>
+            <a href="#cybercrime">Cybercrime</a>
+            <a href="../Projects.html">Back</a>
+            <button id="themeToggle" aria-label="Toggle dark mode" style="margin-left: 10px;">🌙</button>
+        </nav>
+    </header>
+
+    <section id="media" data-type="media" class="textdesign">
+        <p>Media</p>
+
+        <p><b>Traditional Media and Electronic Media</b></p>
+
+                <br>
+
+                <p>
+                    <b>Traditional Media</b> refers to communication and advertising methods that have been used for many years. 
+                    These include television commercials, radio advertisements, flyers, newspapers, billboards, and door-to-door sales. 
+                    For a long time, these methods were the main way businesses and people shared information. However, their use has slowly decreased as technology has improved.
+                </p>
+
+                <br>
+
+                <p>
+                    <b>Electronic Media</b> uses digital devices and the internet to share information. 
+                    People can now listen to music, watch movies, and read content online using computers and mobile phones. 
+                    Examples of electronic media include video recordings, audio files, multimedia presentations, slide shows, CD-ROMs, and internet materials. 
+                    Electronic media allows people to access information anytime and anywhere.
+                </p>
+    </section>
+
+    <section id="benefits" data-type="benefits" class="textdesign">
+        <p>Benefits</p>
+
+        <p><b>Benefits of Media and the History of Radio</b></p>
+                <p>
+                    <b>Electronic media</b> has many benefits to society. 
+                    It allows people to receive information quickly, communicate easily, and share ideas with others. 
+                    It removes distance and time barriers and makes learning, communication, and entertainment more accessible
+                </p>
+
+                <br>
+
+                <p>
+                    <b>Radio</b> is one of the earliest forms of electronic media. 
+                    It started with Samuel Morse, who created Morse Code, and Heinrich Hertz, who proved that radio waves exist. 
+                    Guglielmo Marconi developed wireless communication devices. 
+                    Radio became an important source of news and information, especially during World War II, when it was used for communication and public updates.
+
+                </p>
+    </section>
+
+    <section id="legal" data-type="legal" class="textdesign">
+        <p>Legal</p>
+
+        <p><b>Legal, Ethical, and Societal Issues in Technology</b></p>
+                <p>Technology brings many advantages, but it also creates problems that affect people and society. 
+                    Legal issues involve laws about technology, personal data, and digital content. 
+                    Ethical issues deal with what is right or fair when using technology. 
+                    Societal issues focus on how technology affects people, culture, and communities.
+                </p>
+                <br>
+                <p>Some common issues include:</p>
+                <ul>
+                    <li>Copyright - protects creators' work</li>
+                    <li>Plagiarism - using others' work without credit</li>
+                    <li>Cyberbullying - using technology to harm others</li>
+                    <li>Phishing - tricking people into giving personal information</li>
+                    <li>Digital piracy - illegal copying of media</li>
+                    <li>Cybersex - sexual activities online</li>
+                    <li>Computer addiction - too much use of technology</li>
+                    <li>Digital divide - unequal access to technology</li>
+                </ul>
+                <p>These issues show why technology must be used responsibly.</p>
+    </section>
+
+    <section id="cybercrime" data-type="cybercrime" class="textdesign">
+        <p>Cybercrime</p>
+
+        <p><b>Cybercrime Law and the Importance of Electronic Media</b></p>
+                
+                <br>
+
+                <p>
+                    <b>The Cybercrime Prevention Act of 2012 (R.A. 10175)</b> protects people from online crimes such as illegal access, data interference, identity theft, cybersex, child pornography, and online libel. 
+                    It helps keep the internet safer for everyone.
+                </p>
+                
+                <br>
+                
+                <p>
+                   <b>Media</b> is also regulated by government agencies such as the MTRCB and the Optical Media Board to make sure content is appropriate for the public.
+                </p>
+                
+                <br>
+                
+                <p><b>Electronic media</b> is important because it supports:</p>
+                <ul>
+                    <li>Information sharing</li>
+                    <li>Online learning</li>
+                    <li>Entertainment</li>
+                    <li>Cultural exchange</li>
+                    <li>Social awareness</li>
+                    <li>Business and marketing</li>
+                    <li>Political participation</li>
+                </ul>
+                <p>Because of electronic media, people are more connected and informed than ever before.</p>
+    </section>
+
+
+
+    <!-- BACK TO TOP -->
+    <button id="backToTop" aria-label="Back to top">↑</button>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+
+        <section class="footer-container">
+
+            <section class="footer-brand">
+                <h3>Girlie Grace</h3>
+                <p>
+                    Aspiring Frontend Developer passionate about creating
+                    clean, responsive, and modern websites.
+                </p>
+            </section>
+
+
+            <section class="footer-connect">
+                <h4>Connect</h4>
+                <section class="social-icons">
+                    <a href="https://www.facebook.com/grace.gerlay" target="_blank">Facebook</a>
+                </section>
+            </section>
+
+        </section>
+
+        <section class="footer-bottom">
+            © 2026 GIRLIE GRACE L. ONTOLAN Portfolio
+        </section>
+    </footer>
+
+</body>
+
+<!--Black and white theme-->
+    <script>
+        const toggle = document.getElementById("themeToggle");
+
+        // Load saved theme
+        if (localStorage.getItem("theme") === "dark") {
+            document.body.classList.add("dark");
+            toggle.textContent = "☀️";
+        }
+
+        toggle.addEventListener("click", () => {
+            document.body.classList.toggle("dark");
+
+            const isDark = document.body.classList.contains("dark");
+            toggle.textContent = isDark ? "☀️" : "🌙";
+            localStorage.setItem("theme", isDark ? "dark" : "light");
+        });
+    </script>
+
+    <!--Back to top-->
+    <script>
+        const backToTop = document.getElementById("backToTop");
+
+        window.addEventListener("scroll", () => {
+            const scrolledToBottom =
+                window.innerHeight + window.scrollY >= document.body.offsetHeight - 10;
+
+            backToTop.classList.toggle("show", scrolledToBottom);
+        });
+
+        backToTop.addEventListener("click", () => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    </script>
+</html>
