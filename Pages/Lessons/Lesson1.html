@@ -1,1 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../../Images/Logo.png">
+    <title>Lesson 1</title>
 
+    <link rel="stylesheet" href="../../style.css">
+
+</head>
+<body>
+    <header>
+        <h1>Computing Industry</h1>
+        <nav>
+            <a href="#overview">Overview</a>
+            <a href="#theory">Theory</a>
+            <a href="#local">Local</a>
+            <a href="#careers">Careers</a>
+            <a href="../Projects.html">Back</a>
+            <button id="themeToggle" aria-label="Toggle dark mode" style="margin-left: 10px;">🌙</button>
+        </nav>
+    </header>
+
+    <section id="overview" data-type="overview" class="textdesign">
+        <p>Overview: Overview of Computing</p>
+
+            <p>
+                Computing refers to any goal-oriented activity that uses computers to process information, solve problems, or support daily tasks.
+                Today, computing plays a major role in almost every part of human life such as education, business, communication, entertainment, and even healthcare.
+                <br><br>
+                The computing industry, on the other hand, focuses on the research, development, production, and use of computer technologies. 
+                This includes both hardware and software that help people work more efficiently and stay connected. Fields such as Computer Science, Information Technology, and Entertainment and Multimedia Computing are all part of this industry.
+                <br><br>
+                This section helps learners understand what computing is, why it is important, and how it affects people and society in a positive way.
+            </p>
+    </section>
+
+    <section id="theory" data-type="theory" class="textdesign">
+        <p>Theory: Foundations of Computer Science</p>
+        
+            <p>
+                Computer Science is a branch of science that deals with the study of computation and the design of computers. 
+                It focuses on how computers solve problems and how programs are created to make machines perform specific tasks.
+                <br><br>
+                One important area of Computer Science is the Theory of Computation. 
+                This theory explains how problems are solved using algorithms and models of computation. 
+                It also studies the limits of what computers can and cannot do. Automata theory, which is part of this field, helps in the development of technologies such as artificial intelligence.
+                <br><br>
+                Another key idea in Computer Science is the Three Great Insights:
+            </p>
+    </section>
+
+    <section id="local" data-type="local" class="textdesign">
+        <p>Local Industry: Computing Industry in the Philippines</p>
+        
+            <p>
+                The computing industry in the Philippines is part of the country's growing Information Economy. 
+                Many industries now rely on Information and Communication Technology (ICT) to store, process, and share information.
+                <br><br>
+                Recent data show that more employees are using computers and the internet in their workplaces. 
+                Businesses have also increased their use of mobile technology, online transactions, and social media platforms. 
+                The rise of e-commerce and digital services has created more job opportunities, especially in ICT-related fields.
+                <br><br>
+                The computing industry in the Philippines includes:
+            </p>
+
+            <ul>
+                <li>ICT manufacturing and trade</li>
+                <br>
+                <li>ICT services such as programming and data processing</li>
+                <br>
+                <li>Telecommunications services</li>
+                <br>
+                <li>Content and media industries such as publishing, film, and digital media</li>
+            </ul>
+    </section>
+
+    <section id="careers" data-type="careers" class="textdesign">
+        <p>Careers: Career Opportunities in Computing</p>
+
+                <p>
+                    Graduates of computing-related courses have many career options. 
+                    These jobs are found in different industries and often offer competitive salaries.
+                    <br><br>
+                    Some common careers in computing include:
+                </p>
+
+                <br>
+                
+                <ul>
+                    <li>Software developers and programmers who create applications and systems</li>
+                    <br>
+                    <li>Network and computer systems administrators who manage computer networks</li>
+                    <br>
+                    <li>Database administrators who organize and secure data</li>
+                    <br>
+                    <li>Information security analysts who protect systems from cyber threats</li>
+                    <br>
+                    <li>Web developers and digital designers who build and maintain websites</li>
+                    <br>
+                </ul>
+
+                <br>
+
+                <p>
+                    Most of these careers require at least a bachelor's degree, while others may require advanced education or specialized skills. 
+                    This section helps students see how computing education can lead to stable and rewarding careers in the future
+                </p>
+    </section>
+
+
+    <!-- BACK TO TOP -->
+    <button id="backToTop" aria-label="Back to top">↑</button>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+
+        <section class="footer-container">
+
+            <section class="footer-brand">
+                <h3>Girlie Grace</h3>
+                <p>
+                    Aspiring Frontend Developer passionate about creating
+                    clean, responsive, and modern websites.
+                </p>
+            </section>
+
+
+            <section class="footer-connect">
+                <h4>Connect</h4>
+                <section class="social-icons">
+                    <a href="https://www.facebook.com/grace.gerlay" target="_blank">Facebook</a>
+                </section>
+            </section>
+
+        </section>
+
+        <section class="footer-bottom">
+            © 2026 GIRLIE GRACE L. ONTOLAN Portfolio
+        </section>
+    </footer>
+</body>
+
+
+<!--Black and white theme-->
+    <script>
+        const toggle = document.getElementById("themeToggle");
+
+        // Load saved theme
+        if (localStorage.getItem("theme") === "dark") {
+            document.body.classList.add("dark");
+            toggle.textContent = "☀️";
+        }
+
+        toggle.addEventListener("click", () => {
+            document.body.classList.toggle("dark");
+
+            const isDark = document.body.classList.contains("dark");
+            toggle.textContent = isDark ? "☀️" : "🌙";
+            localStorage.setItem("theme", isDark ? "dark" : "light");
+        });
+    </script>
+
+    <!--Back to top-->
+    <script>
+        const backToTop = document.getElementById("backToTop");
+
+        window.addEventListener("scroll", () => {
+            const scrolledToBottom =
+                window.innerHeight + window.scrollY >= document.body.offsetHeight - 10;
+
+            backToTop.classList.toggle("show", scrolledToBottom);
+        });
+
+        backToTop.addEventListener("click", () => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    </script>
+</html>
