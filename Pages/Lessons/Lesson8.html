@@ -1,1 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../../Images/Logo.png">
+    <title>Lesson 8</title>
 
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+    <header>
+        <h1>Ethics in Computing Industry:</h1>
+        <nav>
+            <a href="#ipr">IPR</a>
+            <a href="#copyrights">Copyrights</a>
+            <a href="#trademarks">Trademarks</a>
+            <a href="#patents">Patents</a>
+            <a href="#ethics">Ethics</a>
+            <a href="../Projects.html">Back</a>
+            <button id="themeToggle" aria-label="Toggle dark mode" style="margin-left: 10px;">🌙</button>
+        </nav>
+    </header>
+
+    <section id="ipr" data-type="ipr" class="textdesign">
+        <p>Intellectual Property Rights (IPR)</p>
+                <p>
+                    Intellectual Property Rights protect creations of the mind. 
+                    In the computing industry, this includes software, digital designs, databases, and online content. 
+                    IPR ensures that creators have legal rights over their work and can control how it is used.
+                </p>
+
+                <br>
+                
+                <p>Why it's important:</p>
+                <ul>
+                    <li>Protects creativity and innovation</li>
+                    <li>Encourages investment in new technology</li>
+                    <li>Prevents unauthorized copying or misuse of digital products</li>
+                </ul>
+
+                <p>Examples in computing:</p>
+                <ul>
+                    <li>Software code written by developers</li>
+                    <li>Designs of mobile apps or websites</li>
+                    <li>Digital music or videos</li>
+                </ul>
+        </section>
+
+    <section id="copyrights" data-type="copyrights" class="textdesign">
+        <p>Copyrights</p>
+
+                <p>
+                    <b>Copyrights</b> give the creator of original work the exclusive right to reproduce, distribute, or display it. 
+                    In computing, this mostly applies to software, videos, music, and online content.
+                </p>
+
+                <br>
+
+                <p>Key points:</p>
+                <ul>
+                    <li>Copyright protects the expression of ideas, not the ideas themselves.</li>
+                    <li>It prevents others from copying your work without permission.</li>
+                </ul>
+
+                <p>Examples:</p>
+                <ul>
+                    <li>Microsoft Office software is copyrighted—illegal copies are prohibited</li>
+                    <li>YouTube videos are protected under copyright laws</li>
+                </ul>
+    </section>
+
+    <section id="trademarks" data-type="trademarks" class="textdesign">
+        <p>Trademarks</p>
+
+                <p>
+                    <b>Trademarks</b> are symbols, logos, or names that identify a company or product. 
+                    They protect a brand's identity so that consumers are not confused between similar products.
+                </p>
+                
+                <br>
+
+                <p>Key points:</p>
+                <ul>
+                    <li>Trademarks help businesses protect their reputation</li>
+                    <li>They can be logos, slogans, or product names</li>
+                </ul>
+                
+                <br>
+
+                <p>Examples in computing:</p>
+                <ul>
+                    <li>Apple logo for Apple products</li>
+                    <li>Google's name and logo for its search engine</li>
+                    <li>Intel's “Intel Inside” logo</li>
+                </ul>
+    </section>
+
+    <section id="patents" data-type="patents" class="textdesign">
+        <p>Patents</p>
+
+                <p>
+                    <b>Patents</b> give inventors the exclusive right to use or sell an invention for a certain period of time. 
+                    In computing, patents often cover new hardware, software processes, or algorithms.
+                </p>
+
+                <br>
+
+                <p>Key points:</p>
+                <ul>
+                    <li>Patents encourage innovation by giving inventors recognition and profit</li>
+                    <li>Patented inventions cannot be copied or sold without permission</li>
+                </ul>
+
+                <br>
+                <p>Examples:</p>
+                <ul>
+                    <li>Software algorithms for encryption</li>
+                    <li>Innovative computer hardware designs</li>
+                    <li>Cloud computing processes</li>
+                </ul>
+    </section>
+
+    <section id="ethics" data-type="ethics" class="textdesign">
+        <p>Ethics</p>
+
+        <p><b>Ethics & Digital Counterfeiting</b></p>
+                <p>
+                    Ethics in computing involves using technology responsibly. This includes respecting copyrights, trademarks, patents, and avoiding digital counterfeiting.
+                    <br><br>
+                    Digital counterfeiting is illegally copying or distributing digital products like software, movies, music, or games.
+
+                </p>
+                
+                <br>
+
+                <p>Key points:</p>
+                <ul>
+                    <li>Using pirated software is illegal and unethical</li>
+                    <li>Respecting digital rights ensures creators are rewarded for their work</li>
+                    <li>Ethical computing includes honesty, fairness, and responsibility in all tech activities</li>
+                </ul>
+
+                <br>
+
+                <p>Examples of ethical computing:</p>
+                <ul>
+                    <li>Using licensed software for school or work</li>
+                    <li>Giving credit when using someone else's digital content</li>
+                    <li>Reporting illegal downloads or counterfeit products</li>
+                </ul>
+    </section>
+
+
+    <!-- BACK TO TOP -->
+    <button id="backToTop" aria-label="Back to top">↑</button>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+
+        <section class="footer-container">
+
+            <section class="footer-brand">
+                <h3>Girlie Grace</h3>
+                <p>
+                    Aspiring Frontend Developer passionate about creating
+                    clean, responsive, and modern websites.
+                </p>
+            </section>
+
+
+            <section class="footer-connect">
+                <h4>Connect</h4>
+                <section class="social-icons">
+                    <a href="https://www.facebook.com/grace.gerlay" target="_blank">Facebook</a>
+                </section>
+            </section>
+
+        </section>
+
+        <section class="footer-bottom">
+            © 2026 GIRLIE GRACE L. ONTOLAN Portfolio
+        </section>
+    </footer>
+</body>
+
+<!--Black and white theme-->
+    <script>
+        const toggle = document.getElementById("themeToggle");
+
+        // Load saved theme
+        if (localStorage.getItem("theme") === "dark") {
+            document.body.classList.add("dark");
+            toggle.textContent = "☀️";
+        }
+
+        toggle.addEventListener("click", () => {
+            document.body.classList.toggle("dark");
+
+            const isDark = document.body.classList.contains("dark");
+            toggle.textContent = isDark ? "☀️" : "🌙";
+            localStorage.setItem("theme", isDark ? "dark" : "light");
+        });
+    </script>
+
+    <!--Back to top-->
+    <script>
+        const backToTop = document.getElementById("backToTop");
+
+        window.addEventListener("scroll", () => {
+            const scrolledToBottom =
+                window.innerHeight + window.scrollY >= document.body.offsetHeight - 10;
+
+            backToTop.classList.toggle("show", scrolledToBottom);
+        });
+
+        backToTop.addEventListener("click", () => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    </script>
+</html>
