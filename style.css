@@ -544,11 +544,34 @@
             line-height: 1.7;
         }
 
+
+/*==================================================================================*/
+/*==================================================================================*/
+/*==================================================================================*/
+/*==================================================================================*/
+
+
 /*Projects.html*/
 
         /*Head / Title/ Bullet*/
         .accordion-box{
-            margin: 80px 100px;
+            background: var(--card);
+            padding: 25px 30px;
+            border-radius: 14px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+            margin-bottom: 20px;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+            cursor: pointer;
+        }
+        
+        .accordion-box h1 {
+            margin: 0;
+            font-size: 1.45rem;
+            font-weight: 600;
+        }
+        .accordion-box:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 20px rgba(0,0,0,0.12);
         }
 
         .accordion-header{
@@ -583,6 +606,17 @@
 
         .accordion-content li{
             margin: 6px 0;
+        }
+
+
+        .lesson-link {
+           text-decoration: none;
+           color: inherit;
+           display: block; 
+        }
+
+        .lesson-link section {
+            cursor: pointer;
         }
 /*==================================================================================*/
 /*==================================================================================*/
@@ -770,7 +804,7 @@
             font-size: 1rem;
             color: var(--text);
         }
-         
+
         .textdesign ul {
             margin-left: 20px;
         }
